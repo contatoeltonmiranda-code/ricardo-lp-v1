@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Certificação em Coaching e Treino Canino — Ricardo Calheiros</title>
+<meta name="description" content="A única Certificação em Coaching e Treino Canino em Portugal ensinada por 1 dos 4 treinadores Koehler reconhecidos na Europa. 6 meses, online, Turma ou Individual.">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700&family=Jost:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --primary:#2563EB;
+    --primary-dark:#1D4ED8;
+    --secondary:#3B82F6;
+    --cta:#F97316;
+    --cta-dark:#EA580C;
+    --bg:#F8FAFC;
+    --bg-block:#EFF6FF;
+    --text:#1E293B;
+    --text-muted:#64748B;
+    --border:#E2E8F0;
+    --white:#FFFFFF;
+  }
+  html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+  body{
+    font-family:'Jost',-apple-system,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.6;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,h4{font-family:'Bodoni Moda',Georgia,serif;font-weight:700;line-height:1.15;letter-spacing:-0.01em}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+
+  /* ─── NAV ─── */
+  nav{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    background:rgba(255,255,255,0.96);backdrop-filter:blur(12px);
+    border-bottom:2px solid var(--primary);
+    padding:14px 0;
+  }
+  .nav-inner{max-width:1280px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between}
+  .logo{font-family:'Bodoni Moda',serif;font-size:22px;font-weight:700;color:var(--text)}
+  .logo-accent{color:var(--primary)}
+  .nav-links{display:flex;gap:32px;font-size:14px;font-weight:500}
+  .nav-links a{color:var(--text-muted);transition:color .2s;cursor:pointer}
+  .nav-links a:hover{color:var(--primary)}
+  .nav-cta{
+    background:var(--cta);color:var(--white);
+    padding:11px 22px;border-radius:6px;
+    font-weight:700;font-size:13px;letter-spacing:0.4px;
+    text-transform:uppercase;cursor:pointer;
+    transition:all .25s;
+    box-shadow:0 4px 14px rgba(249,115,22,0.32);
+  }
+  .nav-cta:hover{background:var(--cta-dark);transform:translateY(-2px);box-shadow:0 6px 20px rgba(249,115,22,0.4)}
+
+  /* ─── HERO (split block — webinar registration pattern) ─── */
+  .hero{
+    margin-top:64px;
+    background:linear-gradient(135deg,var(--bg) 0%,var(--bg-block) 100%);
+    padding:80px 0 100px;
+    position:relative;overflow:hidden;
+  }
+  .hero::before{
+    content:'';position:absolute;top:0;right:0;width:55%;height:100%;
+    background:var(--primary);
+    clip-path:polygon(15% 0,100% 0,100% 100%,0 100%);
+    z-index:0;
+  }
+  .hero-inner{
+    max-width:1280px;margin:0 auto;padding:0 32px;
+    display:grid;grid-template-columns:1.05fr 1fr;gap:64px;align-items:center;
+    position:relative;z-index:1;
+  }
+  .hero-left{padding-right:24px}
+  .pre-head{
+    display:inline-flex;align-items:center;gap:8px;
+    background:rgba(37,99,235,0.1);
+    color:var(--primary);
+    padding:8px 16px;border-radius:99px;
+    font-size:12px;font-weight:700;
+    letter-spacing:0.8px;text-transform:uppercase;
+    margin-bottom:24px;
+  }
+  .pre-head::before{content:'';width:8px;height:8px;background:var(--cta);border-radius:50%;animation:pulse 2s infinite}
+  @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.4)}}
+  .hero h1{
+    font-size:clamp(36px,4.5vw,56px);
+    color:var(--text);
+    margin-bottom:24px;
+  }
+  .hero h1 .accent{color:var(--primary);font-style:italic}
+  .hero-sub{
+    font-size:18px;color:var(--text-muted);
+    line-height:1.7;margin-bottom:32px;max-width:560px;
+  }
+  .badges{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:36px}
+  .badge{
+    background:var(--white);
+    border:2px solid var(--primary);
+    padding:10px 18px;border-radius:8px;
+    font-size:13px;font-weight:600;color:var(--text);
+  }
+  .badge strong{color:var(--cta);font-weight:800}
+  .hero-cta-row{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+  .btn-cta{
+    background:var(--cta);color:var(--white);
+    padding:18px 36px;border-radius:8px;
+    font-family:'Jost',sans-serif;font-size:15px;font-weight:800;
+    letter-spacing:0.6px;text-transform:uppercase;
+    border:none;cursor:pointer;
+    box-shadow:0 8px 24px rgba(249,115,22,0.4);
+    transition:all .25s;
+    display:inline-flex;align-items:center;gap:10px;
+  }
+  .btn-cta:hover{background:var(--cta-dark);transform:translateY(-3px);box-shadow:0 12px 32px rgba(249,115,22,0.5)}
+  .btn-ghost{
+    background:transparent;color:var(--text-muted);
+    padding:18px 24px;border:none;cursor:pointer;
+    font-family:'Jost',sans-serif;font-size:14px;font-weight:600;
+    transition:color .2s;
+  }
+  .btn-ghost:hover{color:var(--primary)}
+  .hero-micro{margin-top:16px;font-size:13px;color:var(--text-muted)}
+
+  /* HERO RIGHT — registration form block */
+  .hero-form-card{
+    background:var(--white);
+    border-radius:16px;
+    padding:40px 36px;
+    box-shadow:0 24px 70px rgba(30,41,59,0.18);
+    position:relative;
+    border-top:6px solid var(--cta);
+  }
+  .form-tag{
+    position:absolute;top:-14px;left:36px;
+    background:var(--cta);color:var(--white);
+    padding:6px 16px;border-radius:99px;
+    font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;
+  }
+  .form-h{
+    font-family:'Bodoni Moda',serif;font-size:24px;font-weight:700;
+    color:var(--text);margin-bottom:8px;
+  }
+  .form-sub{font-size:14px;color:var(--text-muted);margin-bottom:24px}
+  .countdown{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:8px;
+    margin-bottom:24px;padding:16px;
+    background:var(--bg-block);
+    border-radius:10px;
+  }
+  .cd-cell{text-align:center}
+  .cd-num{
+    font-family:'Bodoni Moda',serif;
+    font-size:32px;font-weight:800;color:var(--primary);
+    line-height:1;
+  }
+  .cd-label{
+    font-size:10px;font-weight:700;color:var(--text-muted);
+    text-transform:uppercase;letter-spacing:0.6px;margin-top:4px;
+  }
+  .form-row{margin-bottom:14px}
+  .form-row label{display:block;font-size:12px;font-weight:700;color:var(--text);margin-bottom:6px;text-transform:uppercase;letter-spacing:0.4px}
+  .form-row input,.form-row select{
+    width:100%;padding:13px 16px;border:2px solid var(--border);
+    border-radius:8px;font-family:'Jost',sans-serif;font-size:14px;
+    color:var(--text);background:var(--white);
+    transition:border-color .2s;
+  }
+  .form-row input:focus,.form-row select:focus{outline:none;border-color:var(--primary)}
+  .form-cta{
+    width:100%;background:var(--cta);color:var(--white);
+    padding:16px;border:none;border-radius:8px;
+    font-family:'Jost',sans-serif;font-size:14px;font-weight:800;
+    letter-spacing:0.6px;text-transform:uppercase;cursor:pointer;
+    margin-top:8px;
+    box-shadow:0 6px 20px rgba(249,115,22,0.36);
+    transition:all .25s;
+  }
+  .form-cta:hover{background:var(--cta-dark);transform:translateY(-2px)}
+  .form-micro{font-size:11px;color:var(--text-muted);text-align:center;margin-top:14px}
+
+  /* ─── URGENCY BAR ─── */
+  .urgency{
+    background:var(--primary);color:var(--white);
+    padding:18px 32px;text-align:center;
+    font-size:14px;font-weight:600;
+  }
+  .urgency strong{color:#FCD34D;font-weight:800}
+
+  /* ─── SECTION COMMON ─── */
+  section.s{padding:96px 0;position:relative}
+  .container{max-width:1180px;margin:0 auto;padding:0 32px}
+  .tag{
+    display:inline-block;
+    color:var(--primary);
+    font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;
+    margin-bottom:16px;
+    padding-bottom:8px;border-bottom:3px solid var(--cta);
+  }
+  .h2{font-size:clamp(32px,3.6vw,46px);color:var(--text);margin-bottom:18px;max-width:24ch}
+  .h2 .accent{color:var(--primary);font-style:italic}
+  .lead{font-size:18px;color:var(--text-muted);max-width:640px;line-height:1.7;margin-bottom:48px}
+
+  /* alt section bg (block) */
+  .s.alt{background:var(--bg-block)}
+  .s.dark{background:var(--text);color:var(--white)}
+  .s.dark .h2,.s.dark p{color:var(--white)}
+  .s.dark .tag{color:var(--cta)}
+  .s.dark .lead{color:rgba(255,255,255,0.7)}
+
+  /* ─── FOR WHO — 2 col block ─── */
+  .for-who-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px}
+  .who-block{
+    background:var(--white);border-radius:14px;padding:36px;
+    border-top:6px solid var(--primary);
+    box-shadow:0 8px 28px rgba(30,41,59,0.06);
+    transition:transform .25s,box-shadow .25s;
+  }
+  .who-block:nth-child(2){border-top-color:var(--cta)}
+  .who-block:hover{transform:translateY(-4px);box-shadow:0 14px 40px rgba(30,41,59,0.1)}
+  .who-block h3{font-size:22px;color:var(--text);margin-bottom:18px}
+  .who-block ul{list-style:none}
+  .who-block li{
+    padding:11px 0 11px 28px;position:relative;
+    font-size:15px;color:var(--text);line-height:1.55;
+    border-bottom:1px dashed var(--border);
+  }
+  .who-block li:last-child{border-bottom:none}
+  .who-block li::before{
+    content:'→';position:absolute;left:0;top:11px;
+    color:var(--primary);font-weight:800;
+  }
+  .who-block:nth-child(2) li::before{color:var(--cta)}
+  .for-fecho{
+    text-align:center;margin-top:36px;
+    font-size:16px;font-weight:600;color:var(--text);
+  }
+
+  /* ─── PROBLEM ─── */
+  .problem-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:start}
+  .problem-text p{font-size:16px;color:var(--text);line-height:1.85;margin-bottom:18px}
+  .problem-text strong{color:var(--primary);font-weight:700}
+  .problem-quote{
+    background:var(--white);
+    border-left:6px solid var(--cta);
+    padding:32px 36px;border-radius:0 12px 12px 0;
+    box-shadow:0 8px 28px rgba(30,41,59,0.08);
+  }
+  .problem-quote p{
+    font-family:'Bodoni Moda',serif;font-style:italic;
+    font-size:20px;line-height:1.5;color:var(--text);
+  }
+  .problem-quote cite{
+    display:block;margin-top:18px;font-style:normal;
+    font-family:'Jost',sans-serif;font-size:13px;font-weight:700;
+    color:var(--primary);letter-spacing:0.6px;text-transform:uppercase;
+  }
+  .problem-quote cite::before{content:'— '}
+
+  /* ─── PROMISE / 3 cards ─── */
+  .promise-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:32px}
+  .p-card{
+    background:var(--white);border-radius:14px;padding:36px 32px;
+    border-top:6px solid var(--cta);
+    box-shadow:0 8px 28px rgba(30,41,59,0.06);
+    transition:all .25s;
+  }
+  .p-card:hover{transform:translateY(-6px);box-shadow:0 16px 44px rgba(30,41,59,0.12)}
+  .p-num{
+    display:inline-block;
+    font-family:'Bodoni Moda',serif;font-size:48px;font-weight:800;
+    color:var(--primary);line-height:1;margin-bottom:16px;
+  }
+  .p-card h3{font-size:22px;color:var(--text);margin-bottom:14px}
+  .p-card p{font-size:15px;color:var(--text-muted);line-height:1.7}
+  .promise-note{margin-top:32px;font-size:13px;color:var(--text-muted);font-style:italic;text-align:center;max-width:760px;margin-left:auto;margin-right:auto}
+
+  /* ─── STORY ─── */
+  .story-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:56px;align-items:start}
+  .story-img-wrap{
+    background:var(--primary);
+    border-radius:14px;
+    padding:8px;
+    position:sticky;top:96px;
+  }
+  .story-img-wrap img{
+    width:100%;border-radius:10px;
+    aspect-ratio:3/4;object-fit:cover;
+    filter:brightness(0.95) contrast(1.05);
+  }
+  .story-badge{
+    margin-top:18px;
+    background:var(--cta);color:var(--white);
+    padding:14px 18px;border-radius:8px;
+    font-size:13px;font-weight:700;text-align:center;
+  }
+  .story-badge::before{content:'★ ';color:#FCD34D}
+  .story-text p{font-size:16px;color:var(--text);line-height:1.85;margin-bottom:18px}
+  .story-text strong{color:var(--primary);font-weight:700}
+  .story-quote{
+    background:var(--bg-block);
+    border-left:6px solid var(--primary);
+    padding:24px 30px;border-radius:0 12px 12px 0;
+    margin:24px 0;
+    font-family:'Bodoni Moda',serif;font-style:italic;
+    font-size:18px;color:var(--text);line-height:1.55;
+  }
+
+  /* ─── METHOD / 3 pillars ─── */
+  .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:32px}
+  .pillar{
+    background:var(--white);border-radius:14px;padding:36px 30px;
+    border-top:6px solid var(--primary);
+    transition:all .3s;
+  }
+  .pillar:hover{transform:translateY(-6px);background:var(--bg-block)}
+  .pillar-num{
+    font-family:'Bodoni Moda',serif;font-size:14px;font-weight:800;
+    color:var(--cta);letter-spacing:1.5px;text-transform:uppercase;
+    margin-bottom:14px;display:block;
+  }
+  .pillar h3{font-size:22px;color:var(--text);margin-bottom:14px;line-height:1.25}
+  .pillar p{font-size:15px;color:var(--text-muted);line-height:1.7}
+  .method-note{
+    margin-top:36px;
+    background:var(--white);
+    border:3px dashed var(--primary);
+    padding:24px 30px;border-radius:12px;
+    font-size:15px;color:var(--text);line-height:1.7;
+  }
+  .method-note strong{color:var(--primary)}
+
+  /* ─── LEARN / 8 modules ─── */
+  .modules{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:32px}
+  .mod{
+    background:var(--white);border-radius:12px;padding:24px 28px 24px 80px;
+    position:relative;border-left:5px solid var(--primary);
+    transition:all .25s;
+  }
+  .mod:nth-child(odd){border-left-color:var(--cta)}
+  .mod:hover{transform:translateX(4px);box-shadow:0 8px 24px rgba(30,41,59,0.1)}
+  .mod-n{
+    position:absolute;left:24px;top:24px;
+    width:42px;height:42px;border-radius:8px;
+    background:var(--primary);color:var(--white);
+    font-family:'Bodoni Moda',serif;font-size:18px;font-weight:800;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .mod:nth-child(odd) .mod-n{background:var(--cta)}
+  .mod h4{font-size:17px;color:var(--text);margin-bottom:6px;font-weight:700}
+  .mod p{font-size:14px;color:var(--text-muted);line-height:1.6}
+
+  /* ─── INCLUDES — 6 cards ─── */
+  .inc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:32px}
+  .inc{
+    background:var(--white);border-radius:12px;padding:30px;
+    border:2px solid var(--border);
+    transition:all .25s;
+  }
+  .inc:hover{border-color:var(--primary);transform:translateY(-4px)}
+  .inc-icon{
+    width:48px;height:48px;border-radius:10px;
+    background:var(--bg-block);color:var(--primary);
+    display:flex;align-items:center;justify-content:center;
+    margin-bottom:18px;font-size:22px;font-weight:800;
+  }
+  .inc h4{font-size:17px;color:var(--text);margin-bottom:8px}
+  .inc p{font-size:14px;color:var(--text-muted);line-height:1.6}
+
+  /* ─── BONUS ─── */
+  .bonus-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:32px}
+  .bonus{
+    background:var(--white);border-radius:14px;padding:40px;
+    border-top:6px solid var(--cta);
+    box-shadow:0 8px 28px rgba(30,41,59,0.08);
+  }
+  .bonus-tag{
+    display:inline-block;background:var(--cta);color:var(--white);
+    padding:6px 14px;border-radius:99px;
+    font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;
+    margin-bottom:16px;
+  }
+  .bonus h3{font-size:24px;color:var(--text);margin-bottom:14px}
+  .bonus p{font-size:15px;color:var(--text-muted);line-height:1.7}
+  .bonus-note{margin-top:24px;font-size:13px;color:var(--text-muted);font-style:italic;text-align:center}
+
+  /* ─── TESTIMONIALS — VIDEO GRID ─── */
+  .test-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:32px}
+  .test{
+    background:var(--white);border-radius:14px;
+    overflow:hidden;
+    border:2px solid var(--border);
+    transition:all .25s;
+  }
+  .test:hover{border-color:var(--primary);transform:translateY(-4px);box-shadow:0 16px 40px rgba(30,41,59,0.15)}
+  .test-video{aspect-ratio:9/16;background:#000;position:relative}
+  .test-video iframe{width:100%;height:100%;border:none}
+  .test-info{padding:18px}
+  .test-info .stars{color:var(--cta);font-size:14px;margin-bottom:6px}
+  .test-info h4{font-family:'Jost',sans-serif;font-size:15px;color:var(--text);margin-bottom:2px;font-weight:700}
+  .test-info p{font-size:12px;color:var(--text-muted);font-weight:500}
+  .test-link{
+    display:flex;align-items:center;justify-content:center;
+    width:100%;height:100%;
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+    color:var(--white);
+    font-size:14px;font-weight:700;text-align:center;padding:20px;
+  }
+
+  /* ─── PRICING ─── */
+  .pricing-intro{
+    background:var(--white);border-radius:12px;padding:24px 30px;
+    border-left:6px solid var(--cta);
+    font-size:16px;color:var(--text);line-height:1.7;
+    margin-bottom:32px;
+  }
+  .pricing-intro strong{color:var(--cta)}
+  .price-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+  .price-card{
+    background:var(--white);border-radius:18px;padding:44px 38px;
+    position:relative;
+    border:2px solid var(--border);
+    transition:all .3s;
+  }
+  .price-card:hover{transform:translateY(-6px);box-shadow:0 24px 60px rgba(30,41,59,0.15)}
+  .price-card.featured{
+    border:3px solid var(--cta);
+    box-shadow:0 16px 50px rgba(249,115,22,0.2);
+    transform:translateY(-12px);
+  }
+  .price-card.featured:hover{transform:translateY(-16px)}
+  .price-badge-top{
+    position:absolute;top:-16px;left:50%;transform:translateX(-50%);
+    background:var(--cta);color:var(--white);
+    padding:8px 20px;border-radius:99px;
+    font-size:11px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;
+  }
+  .plan-tag{
+    font-size:12px;font-weight:800;color:var(--primary);
+    letter-spacing:1px;text-transform:uppercase;
+    margin-bottom:8px;
+  }
+  .plan-name{
+    font-family:'Bodoni Moda',serif;font-size:30px;font-weight:700;
+    color:var(--text);margin-bottom:24px;
+  }
+  .price-now{
+    font-family:'Bodoni Moda',serif;
+    font-size:56px;font-weight:800;color:var(--text);
+    line-height:1;margin-bottom:6px;
+  }
+  .price-now sup{font-size:24px;font-weight:600;color:var(--primary);vertical-align:super}
+  .price-freq{font-size:13px;color:var(--text-muted);margin-bottom:10px}
+  .price-total{font-size:14px;color:var(--text);font-weight:600;margin-bottom:4px}
+  .price-save{
+    display:inline-block;
+    background:rgba(249,115,22,0.12);color:var(--cta);
+    padding:5px 12px;border-radius:6px;
+    font-size:12px;font-weight:700;
+    margin-bottom:24px;
+  }
+  .price-card ul{list-style:none;margin-bottom:28px}
+  .price-card li{
+    padding:11px 0 11px 28px;position:relative;
+    font-size:14px;color:var(--text);line-height:1.5;
+  }
+  .price-card li::before{
+    content:'✓';position:absolute;left:0;top:11px;
+    color:var(--cta);font-weight:800;font-size:16px;
+  }
+  .price-card .btn-cta{width:100%;justify-content:center;display:flex}
+  .pricing-note{
+    margin-top:32px;text-align:center;
+    font-size:13px;color:var(--text-muted);line-height:1.7;
+    max-width:720px;margin-left:auto;margin-right:auto;
+  }
+  .pricing-note strong{color:var(--text)}
+
+  /* ─── HOW IT WORKS — 4 steps ─── */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:32px}
+  .step{
+    background:var(--white);border-radius:14px;padding:32px 28px;
+    border-top:6px solid var(--primary);
+    position:relative;
+  }
+  .step:nth-child(even){border-top-color:var(--cta)}
+  .step-num{
+    width:48px;height:48px;border-radius:50%;
+    background:var(--primary);color:var(--white);
+    font-family:'Bodoni Moda',serif;font-size:22px;font-weight:800;
+    display:flex;align-items:center;justify-content:center;
+    margin-bottom:18px;
+  }
+  .step:nth-child(even) .step-num{background:var(--cta)}
+  .step h4{font-size:17px;color:var(--text);margin-bottom:8px;line-height:1.3}
+  .step p{font-size:14px;color:var(--text-muted);line-height:1.6}
+  .steps-note{margin-top:32px;font-size:14px;color:var(--text-muted);font-style:italic;text-align:center}
+
+  /* ─── FAQ ─── */
+  .faq-list{margin-top:32px;display:flex;flex-direction:column;gap:14px;max-width:880px;margin-left:auto;margin-right:auto}
+  .faq{
+    background:var(--white);border-radius:12px;
+    border:2px solid var(--border);
+    overflow:hidden;
+  }
+  .faq summary{
+    padding:22px 28px;cursor:pointer;
+    font-family:'Jost',sans-serif;font-size:16px;font-weight:700;
+    color:var(--text);
+    display:flex;align-items:center;justify-content:space-between;
+    list-style:none;
+  }
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{
+    content:'+';font-size:24px;color:var(--cta);font-weight:300;
+    transition:transform .2s;
+  }
+  .faq[open] summary::after{transform:rotate(45deg)}
+  .faq[open]{border-color:var(--primary)}
+  .faq-body{padding:0 28px 22px;font-size:15px;color:var(--text-muted);line-height:1.75}
+
+  /* ─── FINAL CTA ─── */
+  .final{
+    background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 100%);
+    color:var(--white);
+    padding:120px 0;text-align:center;
+    position:relative;overflow:hidden;
+  }
+  .final::before{
+    content:'';position:absolute;top:-50%;right:-20%;width:60%;height:200%;
+    background:var(--cta);opacity:0.08;
+    transform:rotate(20deg);
+  }
+  .final h2{
+    font-size:clamp(40px,5vw,64px);
+    color:var(--white);
+    max-width:18ch;margin:0 auto 24px;
+    position:relative;z-index:1;
+  }
+  .final h2 .accent{color:#FCD34D;font-style:italic}
+  .final p{
+    font-size:18px;color:rgba(255,255,255,0.85);
+    max-width:600px;margin:0 auto 36px;
+    position:relative;z-index:1;
+  }
+  .final .btn-cta{position:relative;z-index:1}
+  .final-micro{margin-top:18px;font-size:13px;color:rgba(255,255,255,0.6);position:relative;z-index:1}
+
+  /* ─── FOOTER ─── */
+  footer{
+    background:var(--text);color:rgba(255,255,255,0.7);
+    padding:48px 0 32px;
+  }
+  .foot-inner{
+    max-width:1180px;margin:0 auto;padding:0 32px;
+    display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px;
+  }
+  .foot-logo{font-family:'Bodoni Moda',serif;font-size:20px;color:var(--white)}
+  .foot-logo .logo-accent{color:var(--cta)}
+  .foot-links{display:flex;gap:24px;font-size:13px}
+  .foot-links a:hover{color:var(--cta)}
+  .foot-copy{width:100%;border-top:1px solid rgba(255,255,255,0.1);padding-top:24px;text-align:center;font-size:12px;color:rgba(255,255,255,0.4)}
+
+  /* ─── RESPONSIVE ─── */
+  @media(max-width:1024px){
+    .hero::before{display:none}
+    .hero{background:linear-gradient(180deg,var(--bg) 0%,var(--bg-block) 100%)}
+    .hero-inner{grid-template-columns:1fr;gap:48px}
+    .hero-form-card{max-width:480px;margin:0 auto}
+    .promise-grid,.pillars,.inc-grid,.steps{grid-template-columns:1fr 1fr}
+    .test-grid{grid-template-columns:1fr 1fr}
+  }
+  @media(max-width:720px){
+    .nav-links{display:none}
+    .nav-inner{padding:0 20px}
+    section.s{padding:64px 0}
+    .container{padding:0 20px}
+    .for-who-grid,.problem-grid,.story-grid,.bonus-grid,.price-grid{grid-template-columns:1fr}
+    .promise-grid,.pillars,.inc-grid,.steps,.test-grid,.modules{grid-template-columns:1fr}
+    .price-card.featured{transform:none}
+    .price-card.featured:hover{transform:translateY(-6px)}
+    .story-img-wrap{position:static}
+    .countdown{grid-template-columns:repeat(4,1fr);gap:4px}
+    .cd-num{font-size:24px}
+    .h2{max-width:none}
+  }
+</style>
+</head>
+<body>
+
+<!-- ─── NAV ─── -->
+<nav>
+  <div class="nav-inner">
+    <div class="logo">Ricardo <span class="logo-accent">Calheiros</span></div>
+    <div class="nav-links">
+      <a href="#metodo">Método</a>
+      <a href="#curriculo">Currículo</a>
+      <a href="#investimento">Investimento</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <a href="#hero-form" class="nav-cta">Candidatar-me</a>
+  </div>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="pre-head">Próxima turma · 9 de Maio de 2026</div>
+      <h1>Torna-te treinador canino de elite — <span class="accent">e factura entre €2.000 e €30.000 por mês.</span></h1>
+      <p class="hero-sub">Certificação em Coaching e Treino Canino. Seis meses, online via Zoom, nos formatos Turma ou Individual. Ensinada pelo único treinador reconhecido em Portugal no Koehler Method of Dog Training — um dos apenas <strong>4 na Europa</strong>.</p>
+      <div class="badges">
+        <div class="badge">Koehler · <strong>1 de 4 na Europa</strong></div>
+        <div class="badge">€2k a <strong>€30k+</strong>/mês</div>
+        <div class="badge">6 meses · <strong>online</strong></div>
+      </div>
+      <div class="hero-cta-row">
+        <a href="#hero-form" class="btn-cta">Candidatar-me Agora →</a>
+        <a href="#metodo" class="btn-ghost">Ver como funciona ↓</a>
+      </div>
+      <p class="hero-micro">Candidatura prévia obrigatória · vagas limitadas</p>
+    </div>
+
+    <div class="hero-form-card" id="hero-form">
+      <span class="form-tag">Próxima turma</span>
+      <h3 class="form-h">Reservar a minha vaga</h3>
+      <p class="form-sub">Próxima turma começa a 9 de Maio. Vagas limitadas por design.</p>
+
+      <div class="countdown" id="countdown">
+        <div class="cd-cell"><div class="cd-num" id="cd-d">--</div><div class="cd-label">Dias</div></div>
+        <div class="cd-cell"><div class="cd-num" id="cd-h">--</div><div class="cd-label">Horas</div></div>
+        <div class="cd-cell"><div class="cd-num" id="cd-m">--</div><div class="cd-label">Min</div></div>
+        <div class="cd-cell"><div class="cd-num" id="cd-s">--</div><div class="cd-label">Seg</div></div>
+      </div>
+
+      <form onsubmit="event.preventDefault();alert('Formulário de demonstração — em produção liga ao funil real.')">
+        <div class="form-row">
+          <label>Nome</label>
+          <input type="text" placeholder="O teu nome" required>
+        </div>
+        <div class="form-row">
+          <label>E-mail</label>
+          <input type="email" placeholder="o.teu@email.com" required>
+        </div>
+        <div class="form-row">
+          <label>Formato preferido</label>
+          <select required>
+            <option value="">Escolhe um formato</option>
+            <option>Turma · €370/mês</option>
+            <option>Individual · €470/mês</option>
+            <option>Ainda estou a decidir</option>
+          </select>
+        </div>
+        <button type="submit" class="form-cta">Candidatar-me →</button>
+        <p class="form-micro">🔒 O Ricardo entra em contacto para agendar a chamada de avaliação</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ─── URGENCY BAR ─── -->
+<div class="urgency">
+  Próxima turma começa a <strong>9 de Maio de 2026</strong> · vagas limitadas · candidatura prévia obrigatória
+</div>
+
+<!-- ─── FOR WHO ─── -->
+<section class="s">
+  <div class="container">
+    <div class="tag">Para quem é</div>
+    <h2 class="h2">Foi desenhada para <span class="accent">dois perfis.</span> Talvez sejas um deles.</h2>
+    <p class="lead">Esta certificação junta, numa só formação, os dois pontos de partida mais comuns — mas exigentes — do mercado português.</p>
+
+    <div class="for-who-grid">
+      <div class="who-block">
+        <h3>Aspirante a treinador canino</h3>
+        <ul>
+          <li>Estás num trabalho que te esvazia e contas os cêntimos ao fim do mês</li>
+          <li>Adoras cães e queres transformar essa paixão numa carreira sólida</li>
+          <li>Queres acordar com propósito e controlar o teu próprio tempo</li>
+          <li>Queres construir reputação e independência financeira real</li>
+        </ul>
+      </div>
+      <div class="who-block">
+        <h3>Treinador canino em actividade</h3>
+        <ul>
+          <li>Já trabalhas com cães, mas a agenda é instável e a facturação não escala</li>
+          <li>Os casos difíceis — agressividade, ansiedade — continuam a derrotar-te</li>
+          <li>Comparas-te com outros treinadores nas redes e sentes-te para trás</li>
+          <li>Queres posicionamento digital sólido e facturação mensal estável</li>
+        </ul>
+      </div>
+    </div>
+    <p class="for-fecho">Se te revês em qualquer um destes perfis, continua a ler. O resto desta página foi escrito para ti.</p>
+  </div>
+</section>
+
+<!-- ─── PROBLEM ─── -->
+<section class="s alt">
+  <div class="container">
+    <div class="tag">A realidade do mercado</div>
+    <h2 class="h2">O treino canino em Portugal está <span class="accent">partido em dois.</span> E no meio ficam as famílias.</h2>
+
+    <div class="problem-grid">
+      <div class="problem-text">
+        <p>De um lado, os treinadores do espectáculo. Vídeos virais, cães impecáveis em câmara — e <strong>zero transformação real</strong> quando o telemóvel se desliga.</p>
+        <p>Do outro, a abordagem suave — tudo se resolve com petiscos e carinho. Mas o cão ansioso continua ansioso, o agressivo continua agressivo e a família continua em guerra dentro de casa.</p>
+        <p>No meio, milhares de famílias portuguesas vivem em conflito diário com os seus cães. E tu — treinador em actividade ou aspirante — ficas preso a abordagens superficiais que não resolvem nada a fundo. <strong>Sem resultados duradouros. Sem carreira sólida.</strong></p>
+        <p>Esta certificação nasce exactamente para preencher esse vazio.</p>
+      </div>
+      <div class="problem-quote">
+        <p>"O problema raramente está no cão. Está na relação entre o cão e a família à volta. Enquanto ninguém tratar disso, o caos continua."</p>
+        <cite>Ricardo Calheiros</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PROMISE ─── -->
+<section class="s">
+  <div class="container">
+    <div class="tag">A transformação</div>
+    <h2 class="h2">Seis meses. <span class="accent">Três transformações reais.</span></h2>
+    <p class="lead">Não vendemos sonhos. Estas são as três transformações concretas que os alunos do Ricardo reportam quando terminam a certificação.</p>
+
+    <div class="promise-grid">
+      <div class="p-card">
+        <div class="p-num">01</div>
+        <h3>Independência e propósito</h3>
+        <p>Acordas a fazer o que amas. Escolhes os teus clientes. Defines o teu horário. Trabalhas com um sentido que o emprego antigo nunca te deu.</p>
+      </div>
+      <div class="p-card">
+        <div class="p-num">02</div>
+        <h3>Técnica com resultados reais</h3>
+        <p>Aprendes a resolver os casos que outros treinadores dão por perdidos: agressividade, ansiedade de separação, medo, comportamentos obsessivo-compulsivos.</p>
+      </div>
+      <div class="p-card">
+        <div class="p-num">03</div>
+        <h3>Projecção digital e facturação</h3>
+        <p>Sais com um modelo de negócio pronto, posicionamento digital definido e um plano claro para facturares entre €2.000 e €30.000+ por mês.</p>
+      </div>
+    </div>
+    <p class="promise-note">Estes valores são os reportados por alunos reais em actividade. Não há garantias — o resultado depende do compromisso e da entrega de cada aluno.</p>
+  </div>
+</section>
+
+<!-- ─── STORY ─── -->
+<section class="s alt">
+  <div class="container">
+    <div class="tag">A história</div>
+    <h2 class="h2">Não me tornei treinador porque era o meu sonho. <span class="accent">Tornei-me porque precisei.</span></h2>
+
+    <div class="story-grid" style="margin-top:32px">
+      <div class="story-img-wrap">
+        <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=600&q=80" alt="Ricardo Calheiros — placeholder">
+        <div class="story-badge">Único treinador Koehler em Portugal · 1 de 4 na Europa</div>
+      </div>
+      <div class="story-text">
+        <p>Sou o Ricardo Calheiros. Natural do Porto, casado, pai de dois meninos.</p>
+        <p>Durante vários anos trabalhei como <strong>terapeuta de casal e Coach</strong>. O meu dia-a-dia era sentar-me em frente a sistemas humanos — casais, famílias, pessoas com dores emocionais profundas. Aprendi a ler dinâmicas, padrões e o que move as pessoas por dentro.</p>
+        <p>Depois veio um <strong>problema grave de saúde</strong> que mudou tudo. Tive de reinventar o meu trabalho praticamente do zero.</p>
+        <p>Encontrei no treino canino o novo caminho — mas trouxe comigo dez anos de experiência em terapia familiar e coaching humano. E foi aí que percebi exactamente o que faltava ao treino canino tal como é feito na maior parte do mercado.</p>
+        <div class="story-quote">"Percebi que não estava a treinar só o cão. Estava a tratar o sistema inteiro à volta dele. E é aí que mora quase toda a solução dos casos difíceis."</div>
+        <p>Hoje sou treinador canino há dez anos. Uso o Koehler Method of Dog Training como método de preferência — e sou um dos apenas <strong>4 treinadores reconhecidos neste método em toda a Europa</strong>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── METHOD ─── -->
+<section class="s" id="metodo">
+  <div class="container">
+    <div class="tag">O método</div>
+    <h2 class="h2">Porque os problemas do cão <span class="accent">raramente são só do cão.</span></h2>
+    <p class="lead">Treinar o cão isoladamente não resolve. O cão vive inserido num sistema familiar — e esse sistema é metade do problema e praticamente toda a solução.</p>
+
+    <div class="pillars">
+      <div class="pillar">
+        <span class="pillar-num">01 · Ciência</span>
+        <h3>Comportamento canino</h3>
+        <p>Fundamentos sólidos de como o cão aprende, do que responde e como comunica. Inclui o Koehler Method of Dog Training ensinado pelo único formador reconhecido em Portugal.</p>
+      </div>
+      <div class="pillar">
+        <span class="pillar-num">02 · Psicologia</span>
+        <h3>Padrões emocionais dos donos</h3>
+        <p>Como os padrões emocionais dos donos criam, perpetuam ou agravam os problemas do cão. Como ler esses padrões e intervires sem ferir a relação.</p>
+      </div>
+      <div class="pillar">
+        <span class="pillar-num">03 · Sistema</span>
+        <h3>Dinâmica familiar</h3>
+        <p>Reorganizar a rotina, os limites e os papéis dentro de casa para que o trabalho com o cão segure na vida real — e não só durante a sessão.</p>
+      </div>
+    </div>
+
+    <div class="method-note">
+      A vertente de <strong>"coaching"</strong> desta certificação refere-se a esta abordagem aplicada — ferramentas de coaching usadas por ti, futuro treinador, para intervires no sistema familiar do cão. <strong>Não é uma formação em coaching humano nem em desenvolvimento de carreira.</strong> Sais daqui como treinador canino de elite — com ferramentas que a maioria dos outros treinadores nunca toca.
+    </div>
+  </div>
+</section>
+
+<!-- ─── LEARN ─── -->
+<section class="s alt" id="curriculo">
+  <div class="container">
+    <div class="tag">Currículo</div>
+    <h2 class="h2">O que vais dominar ao longo dos <span class="accent">6 meses.</span></h2>
+    <p class="lead">Desenhado para cobrir tudo aquilo que um treinador canino de elite precisa de dominar — da técnica mais rigorosa ao modelo de negócio que sustenta a carreira.</p>
+
+    <div class="modules">
+      <div class="mod"><div class="mod-n">01</div><h4>Comportamento canino a fundo</h4><p>Leitura, comunicação e aprendizagem do cão. Base científica sólida.</p></div>
+      <div class="mod"><div class="mod-n">02</div><h4>Padrões emocionais dos donos</h4><p>Identificação e intervenção na peça humana do problema.</p></div>
+      <div class="mod"><div class="mod-n">03</div><h4>Estruturas de treino equilibradas</h4><p>Protocolos que funcionam fora da sessão, no quotidiano real.</p></div>
+      <div class="mod"><div class="mod-n">04</div><h4>Casos complexos</h4><p>Agressividade, ansiedade de separação, medo, OCD canino.</p></div>
+      <div class="mod"><div class="mod-n">05</div><h4>Koehler Method of Dog Training</h4><p>O método de preferência do Ricardo, único formador em Portugal.</p></div>
+      <div class="mod"><div class="mod-n">06</div><h4>Coaching aplicado ao sistema familiar</h4><p>Ferramentas de intervenção no ambiente humano do cão.</p></div>
+      <div class="mod"><div class="mod-n">07</div><h4>Modelo de negócio para treinador</h4><p>Preços, serviços, funil, margens. Operação rentável e estável.</p></div>
+      <div class="mod"><div class="mod-n">08</div><h4>Posicionamento digital</h4><p>Presença online que traz clientes e te permite escalar a facturação.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── INCLUDES ─── -->
+<section class="s">
+  <div class="container">
+    <div class="tag">O que está incluído</div>
+    <h2 class="h2">Tudo o que precisas para saíres daqui como <span class="accent">profissional de elite.</span></h2>
+
+    <div class="inc-grid">
+      <div class="inc"><div class="inc-icon">▶</div><h4>Aulas ao vivo · Zoom</h4><p>Sessões semanais com o Ricardo às sextas-feiras, às 9h.</p></div>
+      <div class="inc"><div class="inc-icon">⟳</div><h4>Gravações sem limite</h4><p>Revês cada aula quando quiseres. Ficam contigo para sempre.</p></div>
+      <div class="inc"><div class="inc-icon">◯</div><h4>Acompanhamento semanal</h4><p>Comunidade privada com feedback contínuo entre aulas.</p></div>
+      <div class="inc"><div class="inc-icon">✎</div><h4>Análise do teu trabalho</h4><p>Envias vídeos do teu trabalho e o Ricardo corrige em tempo real.</p></div>
+      <div class="inc"><div class="inc-icon">★</div><h4>Exame prático final</h4><p>Avaliação com cão em contexto real — controlo com e sem trela.</p></div>
+      <div class="inc"><div class="inc-icon">◈</div><h4>Certificado oficial</h4><p>A tua credencial formal da Certificação em Coaching e Treino Canino.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── BONUS ─── -->
+<section class="s alt">
+  <div class="container">
+    <div class="tag">Bónus</div>
+    <h2 class="h2">Dois dias de imersão — <span class="accent">gravados e teus para sempre.</span></h2>
+    <p class="lead">Além do currículo principal, qualquer aluno — Turma ou Individual — recebe dois dias completos de imersão já gravados e disponíveis desde o primeiro dia da certificação.</p>
+
+    <div class="bonus-grid">
+      <div class="bonus">
+        <span class="bonus-tag">Bónus 1</span>
+        <h3>Imersão em Agressividade</h3>
+        <p>Um dia completo dedicado a um dos temas mais difíceis e mais procurados do mercado. Agressividade a pessoas, a outros cães, por recurso, por medo. O Ricardo é especialista nesta área e é por aqui que muitos alunos começam a diferenciar-se no mercado.</p>
+      </div>
+      <div class="bonus">
+        <span class="bonus-tag">Bónus 2</span>
+        <h3>Imersão em Marketing e Negócio</h3>
+        <p>Um dia completo sobre como montar o teu negócio, posicionar-te no digital, cobrar o que vales e construir uma agenda estável. O atalho directo para transformares o que aprendes em facturação real.</p>
+      </div>
+    </div>
+    <p class="bonus-note">Ambos os bónus são entregues logo no início da certificação. Não estão dependentes de progressão nem de upgrade.</p>
+  </div>
+</section>
+
+<!-- ─── TESTIMONIALS / VIDEOS ─── -->
+<section class="s">
+  <div class="container">
+    <div class="tag">Alunos</div>
+    <h2 class="h2">O que dizem quem <span class="accent">já passou por aqui.</span></h2>
+    <p class="lead">Quatro alunos reais. Quatro vídeos. Carrega para ouvires diretamente deles.</p>
+
+    <div class="test-grid">
+      <div class="test">
+        <div class="test-video">
+          <iframe src="https://www.youtube.com/embed/B53oZPLqhu0" title="Margarida Castro" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="test-info">
+          <div class="stars">★★★★★</div>
+          <h4>Margarida Castro</h4>
+          <p>Aluna da Certificação</p>
+        </div>
+      </div>
+      <div class="test">
+        <div class="test-video">
+          <iframe src="https://www.youtube.com/embed/n5vwrjdGQOg" title="Célia Arraiolos" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="test-info">
+          <div class="stars">★★★★★</div>
+          <h4>Célia Arraiolos</h4>
+          <p>Aluna da Certificação</p>
+        </div>
+      </div>
+      <div class="test">
+        <div class="test-video">
+          <iframe src="https://www.youtube.com/embed/GrMwby6WDPE" title="Cintia Silva" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="test-info">
+          <div class="stars">★★★★★</div>
+          <h4>Cintia Silva</h4>
+          <p>Aluna da Certificação</p>
+        </div>
+      </div>
+      <div class="test">
+        <div class="test-video">
+          <a href="https://www.instagram.com/reel/DWXr46_ofLT/" target="_blank" rel="noopener" class="test-link">
+            ▶ Ver depoimento<br>no Instagram
+          </a>
+        </div>
+        <div class="test-info">
+          <div class="stars">★★★★★</div>
+          <h4>Joana Araújo</h4>
+          <p>Aluna da Certificação</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PRICING ─── -->
+<section class="s alt" id="investimento">
+  <div class="container">
+    <div class="tag">Investimento</div>
+    <h2 class="h2">Dois formatos. <span class="accent">Um compromisso.</span></h2>
+    <p class="lead">Os dois formatos incluem exactamente o mesmo currículo, os mesmos bónus, o mesmo exame final e o mesmo certificado oficial. A diferença está no nível de atenção directa do Ricardo e no ritmo em que avanças.</p>
+
+    <div class="pricing-intro">
+      O preço é alto por design. <strong>É um filtro.</strong> O que investes aqui é, em média, o que um dos nossos alunos factura no primeiro ou no segundo mês depois de terminar a certificação.
+    </div>
+
+    <div class="price-grid">
+      <div class="price-card">
+        <div class="plan-tag">Plano 1</div>
+        <div class="plan-name">Turma</div>
+        <div class="price-now"><sup>€</sup>370</div>
+        <div class="price-freq">/mês · 6 meses · acompanhamento em grupo</div>
+        <div class="price-total">Total: €2.220</div>
+        <div class="price-save">À vista €2.000 · poupas €220</div>
+        <ul>
+          <li>Aulas ao vivo semanais (Zoom, sextas às 9h)</li>
+          <li>Gravações sem limite de tempo</li>
+          <li>Comunidade privada com acompanhamento contínuo</li>
+          <li>Análise de vídeos do teu trabalho em campo</li>
+          <li>Exame prático final + certificado oficial</li>
+          <li>Bónus: Agressividade + Marketing</li>
+        </ul>
+        <a href="#hero-form" class="btn-cta">Candidatar-me ao Grupo →</a>
+      </div>
+      <div class="price-card featured">
+        <div class="price-badge-top">★ Mais Completo</div>
+        <div class="plan-tag">Plano 2</div>
+        <div class="plan-name">Individual</div>
+        <div class="price-now"><sup>€</sup>470</div>
+        <div class="price-freq">/mês · 6 meses · acompanhamento individual</div>
+        <div class="price-total">Total: €2.820</div>
+        <div class="price-save">À vista €2.400 · poupas €420 (15%)</div>
+        <ul>
+          <li><strong>Tudo o que está no plano Turma</strong></li>
+          <li><strong>Acompanhamento individual</strong> — ritmo adaptado</li>
+          <li><strong>Feedback directo e personalizado</strong> do Ricardo</li>
+          <li><strong>Possibilidade de sessões presenciais</strong></li>
+          <li>Acesso prioritário e atenção dedicada</li>
+        </ul>
+        <a href="#hero-form" class="btn-cta">Candidatar-me ao Individual →</a>
+      </div>
+    </div>
+
+    <p class="pricing-note"><strong>A inscrição conta como primeira mensalidade.</strong> Duração: 6 meses (prazo máximo 12 meses). Não há garantia de resultado — o sucesso depende do compromisso e da entrega de cada aluno.</p>
+  </div>
+</section>
+
+<!-- ─── HOW IT WORKS ─── -->
+<section class="s">
+  <div class="container">
+    <div class="tag">Processo</div>
+    <h2 class="h2">Como entras — <span class="accent">passo a passo.</span></h2>
+    <p class="lead">Antes de entrares, queremos garantir que o formato faz sentido para ti — e que tu fazes sentido para a certificação. O processo é simples e directo.</p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h4>Preenches o formulário</h4>
+        <p>Cerca de 5 minutos. Contas-nos quem és, onde estás e onde queres chegar.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h4>Ricardo analisa o teu perfil</h4>
+        <p>Percebe se estás no momento certo e qual dos formatos te serve melhor.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h4>Conversa curta e directa</h4>
+        <p>Chamada para tirares dúvidas e alinharmos expectativas. Sem pressão.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <h4>Reservas o teu lugar</h4>
+        <p>Se for um sim mútuo, a inscrição conta como primeira mensalidade.</p>
+      </div>
+    </div>
+    <p class="steps-note">Isto não é venda sob pressão. Muitas vezes é o próprio candidato que percebe na chamada que ainda não é o momento — e isso também está bem.</p>
+  </div>
+</section>
+
+<!-- ─── FAQ ─── -->
+<section class="s alt" id="faq">
+  <div class="container">
+    <div class="tag">Perguntas frequentes</div>
+    <h2 class="h2">As perguntas que recebo <span class="accent">antes de cada turma.</span></h2>
+
+    <div class="faq-list">
+      <details class="faq">
+        <summary>O curso é online ou presencial?</summary>
+        <div class="faq-body">As aulas ao vivo são online, via Zoom, às sextas-feiras às 9h. Todas ficam gravadas e disponíveis sem limite de tempo. No plano Individual existe a possibilidade de sessões presenciais combinadas directamente com o Ricardo.</div>
+      </details>
+      <details class="faq">
+        <summary>Ficam-me as gravações das aulas?</summary>
+        <div class="faq-body">Sim. Cada aula fica gravada e fica contigo para sempre. Podes rever antes, durante e depois da certificação — quantas vezes precisares.</div>
+      </details>
+      <details class="faq">
+        <summary>Há garantia de resultado?</summary>
+        <div class="faq-body">Não. Não há garantia e quem promete garantias nesta área, mente. O sucesso depende do compromisso e da entrega de cada aluno. O que nós garantimos é o conteúdo, a metodologia, o acompanhamento e o nível de exigência. O resto está nas tuas mãos.</div>
+      </details>
+      <details class="faq">
+        <summary>Qual é a diferença real entre o plano Turma e o Individual?</summary>
+        <div class="faq-body">O currículo, os bónus, o exame final e o certificado são exactamente os mesmos. A diferença está no nível de atenção directa do Ricardo, no ritmo, no feedback personalizado e na possibilidade de sessões presenciais. Se queres o acompanhamento mais próximo possível, é o Individual. Se queres um excelente acompanhamento em grupo a um investimento mais leve, é a Turma.</div>
+      </details>
+      <details class="faq">
+        <summary>Já sou treinador há alguns anos — isto é para mim?</summary>
+        <div class="faq-body">Sim. Uma parte significativa dos alunos chega já com prática no terreno e quer elevar a técnica, resolver casos difíceis e construir um modelo de negócio e posicionamento digital sérios. A certificação foi desenhada precisamente para também responder a esse perfil.</div>
+      </details>
+      <details class="faq">
+        <summary>Vou mesmo conseguir facturar entre €2.000 e €30.000 por mês?</summary>
+        <div class="faq-body">Estes são os valores reportados por alunos reais. €2.000/mês é o que um treinador recém-formado consegue atingir em ritmo normal nos primeiros meses. Os €30.000+/mês são para quem aplica a fundo o lado de negócio e posicionamento e escala a sério. A certificação dá-te as ferramentas completas — o resultado depende da aplicação.</div>
+      </details>
+      <details class="faq">
+        <summary>Posso pagar só em prestações?</summary>
+        <div class="faq-body">Sim. Tens duas opções em qualquer dos formatos: pagamento integral com desconto ou pagamento em 6 mensalidades sem desconto. A inscrição conta como primeira mensalidade.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FINAL CTA ─── -->
+<section class="final">
+  <div class="container">
+    <h2>A tua próxima vida começa a <span class="accent">9 de Maio.</span></h2>
+    <p>A próxima turma é limitada e a candidatura prévia é obrigatória. Quando fecha, fecha — e a seguinte fica para daqui a alguns meses.</p>
+    <a href="#hero-form" class="btn-cta">Candidatar-me Agora →</a>
+    <p class="final-micro">Após a candidatura, o Ricardo entra em contacto pessoalmente para agendar a chamada de avaliação.</p>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="foot-inner">
+    <div class="foot-logo">Ricardo <span class="logo-accent">Calheiros</span> Dog Trainer</div>
+    <div class="foot-links">
+      <a href="#">Política de Privacidade</a>
+      <a href="#">Termos</a>
+      <a href="#">Contacto</a>
+    </div>
+  </div>
+  <div class="foot-copy">© 2026 Ricardo Calheiros · Todos os direitos reservados</div>
+</footer>
+
+<script>
+  // Countdown to 9 May 2026
+  const target=new Date('2026-05-09T09:00:00').getTime();
+  function tick(){
+    const now=Date.now();
+    const diff=target-now;
+    if(diff<0){
+      ['cd-d','cd-h','cd-m','cd-s'].forEach(id=>document.getElementById(id).textContent='00');
+      return;
+    }
+    const d=Math.floor(diff/86400000);
+    const h=Math.floor((diff%86400000)/3600000);
+    const m=Math.floor((diff%3600000)/60000);
+    const s=Math.floor((diff%60000)/1000);
+    document.getElementById('cd-d').textContent=String(d).padStart(2,'0');
+    document.getElementById('cd-h').textContent=String(h).padStart(2,'0');
+    document.getElementById('cd-m').textContent=String(m).padStart(2,'0');
+    document.getElementById('cd-s').textContent=String(s).padStart(2,'0');
+  }
+  tick();setInterval(tick,1000);
+</script>
+
+</body>
+</html>
